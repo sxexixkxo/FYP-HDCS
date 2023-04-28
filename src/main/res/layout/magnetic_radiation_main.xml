@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fontFamily="sans-serif-condensed-medium"
+    tools:context=".MagneticRadiationDetector">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Magnetic Radiation Detector"
+            android:textColor="@color/appColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/magnetic_radiation_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/magnetic_radiation_instruction"
+            android:textAlignment="center"
+            android:textColor="@color/message_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- import speedometer from github -->
+        <com.github.anastr.speedviewlib.PointerSpeedometer
+            android:id="@+id/pointerSpeedometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:sv_trianglesColor="@color/white"
+            app:sv_unit="µF"
+            app:sv_minSpeed="0"
+            app:sv_maxSpeed="200"
+            app:sv_withTremble="false" />
+
+        <TextView
+            android:id="@+id/magnet_detect_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#08d9d6"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

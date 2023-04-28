@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity= "center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- magnetic radiation detector -->
+    <ImageView
+        android:id="@+id/mRIcon"
+        android:layout_width="251dp"
+        android:layout_height="151dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spy"
+        tools:srcCompat="@drawable/spy">
+    </ImageView>
+
+    <Button
+        android:id="@+id/mRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="MAGNETIC RADIATION DETECTOR"
+        android:textStyle="bold"
+        android:textColor="#EAEAEA"
+        app:backgroundTint="@color/button_background">
+    </Button>
+
+    <!-- helpful advice -->
+    <ImageView
+        android:id="@+id/hAIcon"
+        android:layout_width="251dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/advice"
+        tools:srcCompat="@drawable/advice">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/hAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="HELPFUL ADVICE"
+        android:textStyle="bold"
+        android:textColor="#EAEAEA"
+        app:backgroundTint="@color/button_background">
+    </Button>
+</LinearLayout>
